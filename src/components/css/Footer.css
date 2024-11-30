@@ -1,0 +1,12 @@
+/* 강사님이 주신소스 붙여넣기 */
+footer {
+   height: 100px;
+   background-color: #333;
+   line-height: 100px;
+}
+
+footer > p {
+   color: white;
+   text-align: center;
+   font-weight: bold;
+}
