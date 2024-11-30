@@ -45,8 +45,8 @@ function MovieCategory({ category }) {
    //2번 유즈이팩트
    useEffect(() => {
       dispatch(fetchMovies({ category, page: page[category] }))
-      // eslint-disable-next-line react-hooks/exhaustive-deps
       /** eslint-disable-next-line react-hooks/exhaustive-deps 는 warning을 인지하고있으며, 의도된 조건등록임을 명시해줘서 warning을 안나오게 함 대신 다른사람이 이해하기 쉽게 왜 의존성을 뺐는지 이유를 적어야 한다.*/
+      // eslint-disable-next-line react-hooks/exhaustive-deps
    }, [dispatch, page])
 
    const loadMore = useCallback(() => {
